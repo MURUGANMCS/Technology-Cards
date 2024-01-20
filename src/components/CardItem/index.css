@@ -16,11 +16,53 @@
 
 /* Write CSS code here. */
 .images {
-  height: 200px;
+  height: 70px;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end;
 }
 .card-heading {
   color: #171f46;
+  font-size: 25px;
 }
 .card-details {
   color: #64748b;
+  font-size: 15px;
+  width: 200px;
+}
+.list {
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .list {
+    min-width: 400px;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  .card-heading {
+    font-size: 30px;
+  }
+  .card-details {
+    font-size: 20px;
+    width: 30vw;
+  }
+  .images {
+    height: 100px;
+  }
 }
